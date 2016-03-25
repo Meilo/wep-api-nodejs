@@ -2,11 +2,11 @@ var express = require('express');
 var server = express();
 
 require('./settings')(server);
-require('./cache')(server);
+//require('./cache')(server);
 require('./models')(server);
-require('./middleswares')(server);
-require('./controllers')(server);
-require('./routers')(server);
+require('./middlewares')(server);
+require('./actions')(server);
+require('./routes')(server);
 
-console.log(server.settings.port);
+console.log('Server listening on port ' + server.settings.port);
 server.listen(server.settings.port);

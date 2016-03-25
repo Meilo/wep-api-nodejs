@@ -1,8 +1,9 @@
 {
   "port": 3000,
-  "TOKEN_SECRET": "secret_foobar",
-  "db":{
-    "mongo":"mongodb://localhost:27017/local",
-    "cache":"redis://localhost:6379/cache-db"
-  }
+  "TOKEN_SECRET": "secret",
+  "db": {
+    "mongo": "mongodb://localhost:27017/melud-events",
+    "cache": "redis://localhost:6379/0"
+  },
+  "DEFAULT_ROLE": "user"
 }

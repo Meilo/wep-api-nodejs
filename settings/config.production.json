@@ -1,8 +1,8 @@
 {
   "port": 8080,
-  "TOKEN_SECRET": "s3cr3t_f00b4r",
-  "db":{
-    "mongo":"mongodb://localhost:27017/local-production",
-    "cache":"redis://localhost:6379/cache-db"
+  "TOKEN_SECRET": "s3cr3t_F00b4r",
+  "db": {
+    "mongo": "mongodb://localhost:27017/melud-events-production",
+    "cache": "url"
   }
 }

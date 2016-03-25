@@ -1,36 +1,26 @@
 /**
- * Created by Ludovic on 23/03/2016.
+ * Created by Ludovic on 25/03/2016.
  */
 module.exports = function (server) {
-    var UserSchema = server.mongoose.Schema({
-        username:{
+    var UsersSchema = server.mongoose.Schema({
+        Prenom:{
+            type: String
+        },
+        Email: {
             type: String,
             required: true
         },
-        email: {
-            type: String,
-            required: true
-        },
-        password: {
+        Password: {
             type:String,
             required: true
         },
-        status: {
-            type: Boolean,
-            default: false
-        },
-        Role:{
+        events:[{
             type: server.mongoose.Schema.Types.ObjectId,
-            ref: 'Role'
-        },
-        todos:
-        [{
-            type: server.mongoose.Schema.Types.ObjectId,
-            ref: 'Todo'
+            ref: 'Event'
         }]
     });
 
-    UserSchema.plugin(require('mongoose-timestamp'));
+    UsersSchema.plugin(require('mongoose-timestamp'));
 
-    return server.mongoose.model('User', UserSchema);
+    return server.mongoose.model('Users', UsersSchema);
 };
