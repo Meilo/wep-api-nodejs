@@ -1,5 +1,7 @@
 # Projet pédagogique 5A EB
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Meilo/wep-api-nodejs.svg)](https://greenkeeper.io/)
+
 ## Création d’une API REST pour la gestion d’un portail évènementiel
 --------------------------------------------------------------------------------
 
